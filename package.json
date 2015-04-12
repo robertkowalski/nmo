@@ -13,6 +13,7 @@
   "dependencies": {
     "babel": "~5.0.8",
     "bluebird": "~2.9.24",
+    "nopt": "~3.0.1",
     "npmlog": "~1.2.0",
     "request": "~2.55.0",
     "valid-url": "~1.0.9"

@@ -1,0 +1,9 @@
+rocko=foo
+cluster.rocko=foo
+"[object Object]"=foo
+
+[clusters]
+rocko=artischocko
+z=zmeister
+j=janjuleschlie
+mussman=dermussmaen

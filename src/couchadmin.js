@@ -1,12 +1,39 @@
+import * as config from './config.js';
+
+
 const commands = [
   'isonline',
   'help'
 ];
 
-export const couchadmin = {
-  commands: []
+const couchadmin = {
+  config: null
 };
 
-commands.forEach(function (cmd) {
-  couchadmin.commands[cmd] = require('./' + cmd + '.js');
+Object.defineProperty(couchadmin, 'commands', {
+  get: () => {
+    if (couchadmin.config === null) {
+      throw new Error('run couchadmin.load before');
+    }
+    return commandFuncs;
+  }
 });
+
+const commandFuncs = {};
+couchadmin.load = function load () {
+  return new Promise((resolve, reject) => {
+    config.load()
+      .then((config) => {
+
+        couchadmin.config = config;
+
+        commands.forEach((cmd) => {
+          commandFuncs[cmd] = require('./' + cmd + '.js');
+        });
+
+        resolve(couchadmin);
+    });
+  });
+};
+
+export default couchadmin;

@@ -1,4 +1,8 @@
 import cc from 'config-chain';
+import ini from 'ini';
+import fs from 'fs';
+import xtend from 'xtend';
+
 import couchadmin from '../src/couchadmin.js';
 
 let config;
@@ -7,7 +11,7 @@ export const load = function load (conf = '.couchadminrc') {
   const confFile = cc.find(conf);
   return new Promise((resolve, reject) => {
     config = cc({})
-      .addFile(confFile, 'ini', 'main')
+      .addFile(confFile, 'ini', 'config')
       .on('load', () => {
         resolve(config);
       });
@@ -16,10 +20,17 @@ export const load = function load (conf = '.couchadminrc') {
 
 export const set = function set (key, value) {
   return new Promise((resolve, reject) => {
-    config.on('save', () => {
+    const newValue = xtend(config.get(key, 'config'), value);
+    config.set(key, newValue, 'config');
+    config.save('config', 'ini', () => {
       resolve();
     });
-    config.set(key, value, 'main');
-    config.save('main', 'ini');
+  });
+};
+
+export const get = function get (section = false, key, {silent: true}) {
+  return new Promise((resolve, reject) => {
+    if ()
+    config.get(key, 'config');
   });
 };

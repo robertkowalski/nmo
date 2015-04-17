@@ -1,9 +1,8 @@
-rocko=foo
-cluster.rocko=foo
-"[object Object]"=foo
-
-[clusters]
+[gang]
 rocko=artischocko
 z=zmeister
 j=janjuleschlie
 mussman=dermussmaen
+
+[clusters.clusterone]
+node1=192.168.133.7

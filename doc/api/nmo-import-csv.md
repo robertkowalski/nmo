@@ -1,9 +1,9 @@
-nmo-import-csv(3) -- configuration
-==============================
+nmo-import-csv(3) -- import csv
+===============================
 
 ## SYNOPSIS
 
-    nmo.commands.importcsv(file, url, [csvOptions])
+    nmo.commands['import-csv'](file, url, [csvOptions])
 
 
 

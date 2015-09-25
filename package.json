@@ -24,7 +24,7 @@
     "website": "./website"
   },
   "dependencies": {
-    "bluebird": "~2.9.24",
+    "bluebird": "2.10.1",
     "config-chain": "~1.1.8",
     "ini": "~1.3.3",
     "nopt": "~3.0.1",

@@ -25,7 +25,7 @@
     "website": "./website"
   },
   "dependencies": {
-    "bluebird": "~2.9.24",
+    "bluebird": "~3.0.4",
     "bulkbadger": "^1.0.0",
     "config-chain": "~1.1.8",
     "couchbulkimporter": "^1.0.0",

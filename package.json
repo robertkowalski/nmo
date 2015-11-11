@@ -55,7 +55,7 @@
     "xtend"
   ],
   "devDependencies": {
-    "babel": "^5.1.10",
+    "babel": "^6.0.14",
     "jshint": "^2.8.0",
     "lab": "~5.5.1",
     "lab-babel": "1.0.0",

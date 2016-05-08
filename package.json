@@ -52,7 +52,7 @@
     "babel-polyfill": "^6.2.0",
     "babel-register": "~6.3.13",
     "eslint": "^1.9.0",
-    "less": "~2.5.0",
+    "less": "~2.7.0",
     "marked-man": "~0.1.4",
     "mocha": "^2.3.4",
     "nock": "^4.0.0",

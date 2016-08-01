@@ -54,7 +54,7 @@
     "eslint": "^1.9.0",
     "less": "~2.5.0",
     "marked-man": "~0.1.4",
-    "mocha": "^2.3.4",
+    "mocha": "^3.0.0",
     "nock": "^4.0.0",
     "node-doc-generator": "robertkowalski/node-documentation-generator#sloppy"
   }

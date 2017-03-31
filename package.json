@@ -53,7 +53,7 @@
     "babel-register": "~6.3.13",
     "eslint": "^1.9.0",
     "less": "~2.5.0",
-    "marked-man": "~0.1.4",
+    "marked-man": "~0.2.1",
     "mocha": "^2.3.4",
     "nock": "^4.0.0",
     "node-doc-generator": "robertkowalski/node-documentation-generator#sloppy"
